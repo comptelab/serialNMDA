@@ -2,15 +2,15 @@
 This repository contains all codes necessary to reproduce figures and results reported in Stein, Barbosa et al. (Nature Communications, in press, 2020) from the raw data acquired in human behavioral experiments (data included in the repository), and from the relevant model simulations.
 
 ## data
-/data contains 
+data/ contains 
 -   behavioral data from the baseline session for all subjects ("behavior.pkl"), and behavioral data for all subjects that completed baseline and follow-up sessions ("behavior_retest.pkl")
--   "DOG1_par_exp_1000.npy" and "DOG1_par_sims_1000.npy" store the optimal parameter values found by crossvalidation ("/codes/model_fits_behavior.py" and "/codes/model_fits_modeling.py") for the derivative of Gaussian (DoG) basis function used to model serial dependence in the experimental data and the simulations, respectively. 
--   subfolders "Fig_x/" contains preprocessed data for plotting, used by scripts "/codes/FIGUREx.py"
+-   "DOG1_par_exp_1000.npy" and "DOG1_par_sims_1000.npy" store the optimal parameter values found by crossvalidation ("codes/model_fits_behavior.py" and "codes/model_fits_modeling.py") for the derivative of Gaussian (DoG) basis function used to model serial dependence in the experimental data and the simulations, respectively. 
+-   subfolders "Fig_x/" contains preprocessed data for plotting, used by scripts "codes/FIGUREx.py"
 
 *please note: raw simulation outputs for all parameter values (as used as inputs to "model_fits_modeling.py") imply large files that are not included in this repository. All simulations can be reproduced with codes or sent upon request*
 
 ## codes
-/codes contains 
+codes/ contains 
 -   codes that plot main figures 1-3: "FIGUREx.py"
 -   frequently used functions: "helpers.py"
 -   code that performs crossvalidation of hyperparameter sigma in DoG basisfunction for experimental data: "model_fits_behavior.py"
